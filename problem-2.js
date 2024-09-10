@@ -3,13 +3,13 @@ function sendNotification(email) {
     return "Invalid Email"; 
   }
 
-  const words = email.split('@');
+  const userDomainSplit = email.split('@');
   // return words;
-  const userName = words[0];
-  const domainName = words[1];
+  const userName = userDomainSplit[0];
+  const domainName = userDomainSplit[1];
   
-  const creatNotification = userName + " sent you an eamil form " + domainName;
-  return creatNotification;
+  const notificationMessage = userName + " sent you an eamil form " + domainName;
+  return notificationMessage;;
 
   // You have to write your code here
 }
