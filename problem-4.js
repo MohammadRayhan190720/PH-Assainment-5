@@ -19,12 +19,21 @@ function calculateFinalScore(obj) {
      return "invalid info";
    }
 
-   const scores = obj.testScore + obj.schoolGrade;
-   return scores;
+   let scores = obj.testScore + obj.schoolGrade;
+   if (info.isFFamily === true){
+    scores = scores + 20 ;
+    // return scores;
+   }
+   if ( scores >= 80){
+    return "true";
+   }
+   else{
+    return "false";
+   }
    
   
 }
 
-const info = { name: "Rajib", testScore: 45, schoolGrade: 25, isFFamily: true };
+const info = { name: "Rajib", testScore: 15, schoolGrade: 25, isFFamily: true};
 const result = calculateFinalScore(info);
 console.log(result);
