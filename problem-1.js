@@ -3,13 +3,9 @@ function calculateTax(income, expenses) {
     return "Invalid Input";
   }
 
-  // const hotelIncome = income ;
-  // const hotelExpenses = expenses ;
-
   const differenceIncomeExpenses = income - expenses ;
-  // return (differenceIncomeExpenses)
 
-  const calculatedTax =  differenceIncomeExpenses * 0.2;
+   const calculatedTax =  differenceIncomeExpenses * 0.2;
    return calculatedTax;
    
 }
