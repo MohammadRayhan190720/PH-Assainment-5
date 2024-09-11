@@ -4,7 +4,7 @@ function checkDigitsInName(name) {
   }
   const letters = name.split('')
   for (const letter of letters) {
-      if (!isNaN(letter)){
+      if (!isNaN(letter) && letter !== ' '){
            return true;
       }
     
@@ -14,8 +14,8 @@ function checkDigitsInName(name) {
   
 }
 const result = checkDigitsInName("Raj123");
-const result2 = checkDigitsInName("Suman");
-const result3 = checkDigitsInName("Name2024");
+const result2 = checkDigitsInName("Suman Ahmed");
+const result3 = checkDigitsInName("Name 2024");
 const result4 = checkDigitsInName("!@#");
 const result5 = checkDigitsInName(["Raj"]);
 console.log(result);
