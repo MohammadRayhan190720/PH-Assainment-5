@@ -11,7 +11,7 @@ function sendNotification(email) {
   const notificationMessage = userName + " sent you an eamil form " + domainName;
   return notificationMessage;;
 
-  // You have to write your code here
+  
 }
 const result = sendNotification("zihad@gmail.com");
 const result2 = sendNotification("farhan34@yahoo.com");
