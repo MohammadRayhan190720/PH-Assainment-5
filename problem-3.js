@@ -2,9 +2,8 @@ function checkDigitsInName(name) {
   if (typeof name !== 'string') {
     return "Invalid Input";
   }
-  // const letters = name.split('')
-  for (const letter of name) {
-      // console.log(letter);
+  const letters = name.split('')
+  for (const letter of letters) {
       if (!isNaN(letter)){
            return true;
       }
