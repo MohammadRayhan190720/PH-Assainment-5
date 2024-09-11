@@ -8,7 +8,7 @@ function sendNotification(email) {
   
 
   const userDomainSplit = email.split('@');
-  // return words;
+  
   const userName = userDomainSplit[0];
   const domainName = userDomainSplit[1];
   

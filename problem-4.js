@@ -22,7 +22,6 @@ function calculateFinalScore(obj) {
    let scores = obj.testScore + obj.schoolGrade;
    if (info.isFFamily === true){
     scores = scores + 20 ;
-    // return scores;
    }
    if ( scores >= 80){
     return "true";
