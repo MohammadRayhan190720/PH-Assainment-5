@@ -24,15 +24,20 @@ function calculateFinalScore(obj) {
     scores = scores + 20 ;
    }
    if ( scores >= 80){
-    return "true";
+    return true;
    }
    else{
-    return "false";
+    return false;
    }
    
   
 }
 
-const info = { name: "Rajib", testScore: 15, schoolGrade: 25, isFFamily: true};
+const info = {
+  name: "Rajib",
+  testScore: 45,
+  schoolGrade: 25,
+  isFFamily: true,
+}; 
 const result = calculateFinalScore(info);
 console.log(result);
